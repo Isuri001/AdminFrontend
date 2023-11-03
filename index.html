@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Admin</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+<div class="sequence">
+
+    <div class="seq-preloader">
+        <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg"
+             class="seq-preload-indicator">
+            <g fill="#F96D38">
+                <path class="seq-preload-circle seq-preload-circle-1"
+                      d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z"/>
+                <path class="seq-preload-circle seq-preload-circle-2"
+                      d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z"/>
+                <path class="seq-preload-circle seq-preload-circle-3"
+                      d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z"/>
+            </g>
+        </svg>
+    </div>
+
+</div>
+<nav>
+    <div class="logo">
+        <img src="img/pic1.png" alt="">
+    </div>
+    <div class="mini-logo">
+        <img src="img/pic2.png" alt="">
+    </div>
+    <ul>
+        <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
+        <li><a href="#2"><i class="fa fa-user"></i> <em>User</em></a></li>
+        <li><a href="#3"><i class="fa fa-hotel"></i> <em>Hotel</em></a></li>
+        <li><a href="#4"><i class="fa fa-user-secret"></i> <em>Guide</em></a></li>
+        <li><a href="#5"><i class="fa fa-car"></i> <em>Vehicle</em></a></li>
+        <li><a href="#6"><i class="fa fa-location-arrow"></i> <em>Travel</em></a></li>
+    </ul>
+</nav>
+
+<div class="slides">
+    <div class="slide" id="1">
+        <div class="content first-content">
+            <div class="wrapper">
+                <div class="title">
+                    Login Form
+                </div>
+                <form action="#">
+                    <div class="field">
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------User Start------------------------------->
+    <div class="slide" id="2">
+        <div class="content second-content">
+            <div class="user">
+                <form action="#">
+                    <div class="user-details">
+
+                        <div class="input-wrapper">
+                            <button class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px"
+                                     width="25px">
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff"
+                                          d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff" d="M22 22L20 20"></path>
+                                </svg>
+                            </button>
+                            <input placeholder="search.." class="input" name="text" type="text">
+                        </div>
+
+                        <div class="input-box">
+                            <div class="img_input_container ">
+                                <div>
+                                    <span class="details">Profile-Pic</span>
+                                    <input type="file" id="user_profile_pic" class="file">
+                                </div>
+                                <div>
+                                    <img src="img/pic5.png" alt=>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">User Name</span>
+                            <input type="text" class="color" id="user_name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Contact</span>
+                            <input type="text" class="color" id="user_contact" placeholder="Enter your contact" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" id="user_email" class="color" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Birthday</span>
+                            <input type="date" id="user_birthday" class="date" placeholder="MM/DD/YYYY" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">NIC</span>
+                            <input type="text" class="color"id="user_nic" placeholder="Enter your NIC" required>
+                        </div>
+                        <div class="rButton">
+                            <input type="radio" name="gender" id="dot-1">
+                            <input type="radio" name="gender" id="dot-2">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check" id="user_gender:checked"> Male </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check" id=""> Female </label>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="img_input_container ">
+                                <div>
+                                    <span class="details">NIC Front</span>
+                                    <input type="file" id="user_nic_front" class="file">
+                                </div>
+                                <div>
+                                    <img src="img/pic5.png" alt=>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="img_input_container ">
+                                <div>
+                                    <span class="details">NIC Rear</span>
+                                    <input type="file" id="user_nic_rear" class="file">
+                                </div>
+                                <div>
+                                    <img src="img/pic5.png" alt=>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="button save">
+                        <input type="submit" class="b1" value="Save">
+                    </div>
+                    <div class="button update">
+                        <input type="submit" class="b2" value="Update">
+                    </div>
+                    <div class="button delete">
+                        <input type="submit" class="b3" value="Delete">
+                    </div>
+                    <div class="button clear">
+                        <input type="submit" class="b4" value="Clear">
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>NIC</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------User End  ------------------------------->
+
+    <!-- ------------------Hotel Start------------------------------->
+
+    <div class="slide" id="3">
+        <div class="content third-content">
+            <div class="hotel">
+                <form action="#">
+                    <div class="hotel-details">
+                        <div class="input-wrapper">
+                            <button class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px"
+                                     width="25px">
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff"
+                                          d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff" d="M22 22L20 20"></path>
+                                </svg>
+                            </button>
+                            <input placeholder="search.." class="input" name="text" type="text">
+                        </div>
+                        <div class="input-box">
+                            <div class="img_input_container">
+                                <div>
+                                    <span class="details">Front View</span>
+                                    <input type="file" class="file"></div>
+                                <div>
+                                    <img src="img/pic5.png" alt=>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Name</span>
+                            <input type="text" placeholder="Name " class="color" required>
+                        </div>
+
+                        <div class="rButton-3">
+                            <span class="details">Category</span>
+                            <input type="radio" name="pets" id="dot-23">
+                            <input type="radio" name="pets" id="dot-24">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> 2 Star </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> 3 Star </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> 4 Star </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> 5 Star </label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Location</span>
+                            <input type="text" placeholder="Location" class="color" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" placeholder="Email" class="color" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Contact</span>
+                            <input type="text" placeholder="Enter Contact" class="color">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Fee</span>
+                            <input type="text" placeholder="Enter Fee" class="color">
+                        </div>
+
+                        <div class="rButton-3">
+                            <span class="details">Pets</span>
+                            <input type="radio" name="pets" id="dot-3">
+                            <input type="radio" name="pets" id="dot-4">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Allowed </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Not Allowed </label>
+                        </div>
+
+                        <div class="rButton-2">
+                            <span class="details">Cancellation Criteria</span>
+                            <input type="radio" name="cancel" id="dot-5">
+                            <input type="radio" name="cancel" id="dot-6">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Fee </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Non Fee </label>
+                        </div>
+
+                    </div>
+                    <div class="button save">
+                        <input type="submit" class="b1" value="Save">
+                    </div>
+                    <div class="button update">
+                        <input type="submit" class="b2" value="Update">
+                    </div>
+                    <div class="button delete">
+                        <input type="submit" class="b3" value="Delete">
+                    </div>
+                    <div class="button clear">
+                        <input type="submit" class="b4" value="Clear">
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Hotel Id</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                                <th>Email</th>
+                                <th>Contact Number</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------Hotel End------------------------------->
+
+    <!-- ------------------Guide Start------------------------------->
+
+    <div class="slide" id="4">
+        <div class="content fourth-content">
+            <div class="guide">
+                <form action="#">
+                    <div class="guide-details">
+                        <div class="input-wrapper">
+                            <button class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px"
+                                     width="25px">
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff"
+                                          d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff" d="M22 22L20 20"></path>
+                                </svg>
+                            </button>
+                            <input placeholder="search.." class="input" name="text" type="text">
+                        </div>
+                        <div class="input-box">
+                            <div class="img_input_container">
+                                <div>
+                                    <span class="details">Profile-Pic</span>
+                                    <input type="file" class="file"></div>
+                                <div class="circle">
+                                    <img src="img/pic4.png" alt=>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Name</span>
+                            <input type="text" class="color" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Address</span>
+                            <input type="text" class="color" placeholder="Enter address" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Age</span>
+                            <input type="text" class="color" placeholder="Enter your age" required>
+                        </div>
+                        <div class="rButton-1">
+                            <span class="details">Gender</span>
+                            <input type="radio" name="gender" id="dot-7">
+                            <input type="radio" name="gender" id="dot-8">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Male </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Female </label>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Contact Number</span>
+                            <input type="text" class="color" placeholder="Enter your Number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Experience</span>
+                            <input type="text" class="color" placeholder="Enter Experience" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Man Day Value</span>
+                            <input type="text" class="color" placeholder="Enter Man Day Value" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Remarks</span>
+                            <input type="text" class="color" placeholder="Enter Remarks" required>
+                        </div>
+                        <div class="input-box">
+                            <div class="img_input_container">
+                                <div>
+                                    <span class="details">NIC-img</span>
+                                    <input type="file" class="file"></div>
+                                <div class="circle">
+                                    <img src="img/pic4.png" alt=>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="img_input_container">
+                                <div>
+                                    <span class="details">Guide-Id-Img</span>
+                                    <input type="file" class="file"></div>
+                                <div class="circle">
+                                    <img src="img/pic4.png" alt=>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="button save">
+                        <input type="submit" class="b1" value="Save">
+                    </div>
+                    <div class="button update">
+                        <input type="submit" class="b2" value="Update">
+                    </div>
+                    <div class="button delete">
+                        <input type="submit" class="b3" value="Delete">
+                    </div>
+                    <div class="button clear">
+                        <input type="submit" class="b4" value="Clear">
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Guide Id</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Contact Number</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------Guide End------------------------------->
+
+
+    <!-- How to change your own map point
+   1. Go to Google Maps
+   2. Click on your location point
+   3. Click "Share" and choose "Embed map" tab
+   4. Copy only URL and paste it within the src="" field below
+-->
+
+    <!--            <div id="map">-->
+
+    <!--                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+    <!--            </div>-->
+
+    <!-- ------------------Vehicle Start------------------------------->
+
+    <div class="slide" id="5">
+        <div class="content fifth-content">
+            <div class="vehicle">
+                <form action="#">
+                    <div class="vehicle-details">
+                        <div class="input-wrapper">
+                            <button class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px"
+                                     width="25px">
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff"
+                                          d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff" d="M22 22L20 20"></path>
+                                </svg>
+                            </button>
+                            <input placeholder="search.." class="input" name="text" type="text">
+                        </div>
+                        <div class="input-box">
+                            <div class="img_input_container">
+                                <div>
+                                    <span class="details">Image</span>
+                                    <input type="file" class="file"></div>
+                                <div class="circle">
+                                    <img src="img/pic4.png" alt=>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Vehicle Brand</span>
+                            <input type="text" placeholder="Enter Brand" class="color">
+                        </div>
+
+                        <div class="rButton-3">
+                            <span class="details ">Category</span>
+
+                            <input type="radio" name="vehicle" id="dot-13">
+                            <input type="radio" name="vehicle" id="dot-14">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Economy </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Mid-Range </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Luxury </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Super-Luxury </label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Hybrid or Non-Hybrid</span>
+                            <div class="checkbox-wrapper-10">
+                                <input checked="" type="checkbox" id="cb6" class="tgl tgl-flip">
+                                <label for="cb6" data-tg-on="Hybrid" data-tg-off="Non" class="tgl-btn"></label>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Fuel Type</span>
+                            <div class="checkbox-wrapper-10">
+                                <input checked="" type="checkbox" id="cb5" class="tgl tgl-flip">
+                                <label for="cb5" data-tg-on="Diesel" data-tg-off="Petrol" class="tgl-btn"></label>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Fuel Usage</span>
+                            <input type="text" placeholder="Enter fuel usage" class="color">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">Seat Capacity</span>
+                            <input type="number" class="num">
+                        </div>
+
+                        <div class="rButton-4">
+                            <span class="details ">Vehicle Type</span>
+
+                            <input type="radio" name="vehicle" id="dot-11">
+                            <input type="radio" name="vehicle" id="dot-12">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Car </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Van </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> SUV </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Bus </label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Transmission Type</span>
+                            <div class="checkbox-wrapper-10">
+                                <input checked="" type="checkbox" id="cb7" class="tgl tgl-flip">
+                                <label for="cb7" data-tg-on="Auto" data-tg-off="Manual" class="tgl-btn"></label>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Driver's Name</span>
+                            <input type="text" placeholder="Enter Driver's Name" class="color">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Driver's Contact Number</span>
+                            <input type="text" placeholder="Enter Driver's Contact" class="color">
+                        </div>
+
+                        <div class="input-box">
+                            <div class="img_input_container">
+                                <div>
+                                    <span class="details">Driver License Image</span>
+                                    <input type="file" class="file"></div>
+                                <div class="circle">
+                                    <img src="img/pic4.png" alt=>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Remarks</span>
+                            <input type="text" placeholder="Enter Remarks" class="color">
+                        </div>
+
+
+                    </div>
+                    <div class="button save">
+                        <input type="submit" class="b1" value="Save">
+                    </div>
+                    <div class="button update">
+                        <input type="submit" class="b2" value="Update">
+                    </div>
+                    <div class="button delete">
+                        <input type="submit" class="b3" value="Delete">
+                    </div>
+                    <div class="button clear">
+                        <input type="submit" class="b4" value="Clear">
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Vehicle Id</th>
+                                <th>Brand</th>
+                                <th>Category</th>
+                                <th>Vehicle Type</th>
+                                <th>Driver's Contact Number</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------Vehicle End------------------------------->
+
+    <!-- ------------------Travel Start------------------------------->
+
+    <div class="slide" id="6">
+        <div class="content sixth-content">
+            <div class="travel">
+                <form action="#">
+                    <div class="travel-details">
+                        <div class="input-wrapper">
+                            <button class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px"
+                                     width="25px">
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff"
+                                          d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                          stroke="#fff" d="M22 22L20 20"></path>
+                                </svg>
+                            </button>
+                            <input placeholder="search.." class="input" name="text" type="text">
+                        </div>
+
+                        <div class="rButton-3">
+                            <span class="details ">Package Category</span>
+
+                            <input type="radio" name="vehicle" id="dot-21">
+                            <input type="radio" name="vehicle" id="dot-22">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Regular </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Mid-Level </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Luxury </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Super-Level </label>
+
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Travel Duration</span>
+                            <label>Start Date :</label>
+                            <input type="date" class="date">
+                            <label>End Date :</label>
+                            <input type="date" class="date">
+                        </div>
+
+                        <div class="rButton-5">
+                            <span class="details">Travel Area</span>
+                            <input type="radio" name="gender" id="dot-15">
+                            <input type="radio" name="gender" id="dot-16">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Kandy and Upcountry </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Eastern Coast </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Capital Colombo </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Western Coast </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> North Peninsula </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Down South </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Sigiriya and Dambulla </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Anuradhapura and Polonnaruwa </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Matale </label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">No of Adults</span>
+                            <input type="number" class="num">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">No of Children</span>
+                            <input type="number" class="num">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">Total HeadCount</span>
+                            <input type="number" class="num">
+                        </div>
+
+                        <div class="rButton-3">
+                            <span class="details ">Pets</span>
+
+                            <input type="radio" name="vehicle" id="dot-17">
+                            <input type="radio" name="vehicle" id="dot-18">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Allowed </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Not Allowed </label>
+
+                        </div>
+
+                        <div class="rButton-3">
+                            <span class="details ">Need Guide or No</span>
+
+                            <input type="radio" name="vehicle" id="dot-19">
+                            <input type="radio" name="vehicle" id="dot-20">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> Need </label>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="check"> No </label>
+
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">Customer Id</span>
+                            <input type="text" placeholder="Customer Id" class="color">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">Remarks</span>
+                            <input type="text" placeholder="Enter Remarks" class="color">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">Package Value</span>
+                            <label class="fee-lbl">Per day hotel fee*Days : </label>
+                            <input type="text" class="fee">
+                            <label class="fee-lbl">Guide Fee(Man day value*days) : </label>
+                            <input type="text" class="fee">
+                            <label class="fee-lbl">Vehicle Fee (Per day charge*days) : </label>
+                            <input type="text" class="fee">
+                            <label class="fee-lbl">Total </label>
+                            <input type="text" class="fee">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">Paid Value</span>
+                            <input type="text" class="color">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">Remaining Value</span>
+                            <input type="text" class="color">
+                        </div>
+
+                    </div>
+                    <div class="button save">
+                        <input type="submit" class="b1" value="Save">
+                    </div>
+                    <div class="button update">
+                        <input type="submit" class="b2" value="Update">
+                    </div>
+                    <div class="button delete">
+                        <input type="submit" class="b3" value="Delete">
+                    </div>
+                    <div class="button clear">
+                        <input type="submit" class="b4" value="Clear">
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Package Id</th>
+                                <th>Package Category</th>
+                                <th>Travel Duration</th>
+                                <th>Customer Id</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/datepicker.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // navigation click actions 
+        $('.scroll-link').on('click', function (event) {
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function (event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 'slow');
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+
+    // scroll function
+    function scrollToID(id, speed) {
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop: targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+
+    if (typeof console === "undefined") {
+        console = {
+            log: function () {
+            }
+        };
+    }
+</script>
+
+<script>
+
+    console.log($(".input-box .img_input_container input[type=file]"))
+
+    $(document).ready(function () {
+        $(".input-box .img_input_container input[type=file]").each(function () {
+            let o = this;
+            console.log(o);
+            $(o).on('change', function () {
+                let file = this.files[0];
+                if (file) {
+                    let reader = new FileReader();
+                    reader.onload = function (e) {
+                        console.log(($(o)).parent().parent())
+                        $(o).parent().parent().find('img').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    });
+
+</script>
+<script>
+    const checkboxes = document.querySelectorAll('.check');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                // Unselect all other checkboxes with the same name attribute
+                checkboxes.forEach(otherCheckbox => {
+                    if (otherCheckbox !== this && otherCheckbox.getAttribute('name') === this.getAttribute('name')) {
+                        otherCheckbox.checked = false;
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
